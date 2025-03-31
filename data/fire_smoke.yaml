@@ -8,9 +8,14 @@
 
 
 # Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
-path: /home/pf/yolov5-6.1/training_data # ./datasets/coco128  # dataset root dir
-train: images/train  # train images (relative to 'path') 128 images
-val: images/val  # val images (relative to 'path') 128 images
+path: /root/yolov5-6.1/training_data # ./datasets/coco128  # dataset root dir
+train: 
+  - images/train  # train images (relative to 'path') 128 images
+  - images/internet_images
+  - images/local_train
+val: 
+  - images/val  # val images (relative to 'path') 128 images
+  - images/local_val
 test:  # test images (optional)
 
 # Classes
